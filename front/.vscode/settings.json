@@ -1,0 +1,9 @@
+{
+    "path-autocomplete.extensionOnImport": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "eslint.validate": ["html", "javascript", "javascriptreact", "typescript"],
+    "eslint.format.enable": true,
+    "eslint.run": "onSave"
+}

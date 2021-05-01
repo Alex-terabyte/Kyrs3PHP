@@ -1,0 +1,35 @@
+{
+    "init standart native ts comp": {
+        "prefix": "initSNC",
+        "body": [
+            "import React from 'react';",
+            "import { View } from 'react-native';",
+            "",
+            "export interface I${TM_FILENAME_BASE/\\..+//g}Props {",
+            "\t$1",
+            "}",
+            "",
+            "export const ${TM_FILENAME_BASE/\\..+//g}: React.FC<I${TM_FILENAME_BASE/\\..+//g}Props> = ({",
+            "\t$2",
+            "}) => {",
+            "\treturn (",
+            "\t\t<View>",
+            "\t\t\t$3",
+            "\t\t</View>",
+            "\t);",
+            "};"
+        ],
+        "description": "init native ts comp"
+    },
+    "init styles for native ts comp": {
+        "prefix": "initSTC",
+        "body": [
+            "import { StyleSheet } from 'react-native';",
+            "",
+            "export const S${TM_FILENAME_BASE/\\..+//g} =  StyleSheet.create({",
+            "\t$2",
+            "});"
+        ],
+        "description": "init styles for ts comp"
+    }
+}

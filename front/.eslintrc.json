@@ -1,0 +1,53 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb",
+        "prettier",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module",
+        "project": "./tsconfig.json"
+    },
+    "plugins": ["react", "@typescript-eslint"],
+    "rules": {
+        "import/extensions": "off",
+        "import/prefer-default-export": "off",
+        "import/no-extraneous-dependencies": "off",
+        "react/style-prop-object": "off",
+        "react/no-array-index-key": "off",
+        "react/prop-types": "off",
+        "react/no-unused-prop-types": "off",
+        "react/jsx-filename-extension": "off",
+        "react/jsx-props-no-spreading": "off",
+        "react/jsx-no-bind": "off",
+        "@typescript-eslint/no-use-before-define": "error",
+        "@typescript-eslint/no-non-null-assertion": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "no-use-before-define": "off",
+        "no-shadow": "off",
+        "no-console": "off",
+        "no-case-declarations": "off",
+        "camelcase": "off",
+        "func-names": "off",
+        "no-plusplus": "off",
+        "no-param-reassign": "off",
+        "no-restricted-syntax": "off"
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [".js", ".jsx", ".ts", ".d.ts", ".tsx"]
+            }
+        }
+    }
+}
