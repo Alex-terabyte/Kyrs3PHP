@@ -10,7 +10,7 @@ services:
         environment:
             - CHOKIDAR_USEPOLLING=true
         volumes:
-            - ./:/presentation
+            - ./front:/presentation
             - /presentation/node_modules
         command: yarn start
         depends_on:
@@ -28,7 +28,7 @@ services:
         ports:
             - '3003:3000'
         volumes:
-            - ./:/FPSMetricsBack
+            - ./back:/FPSMetricsBack
             - /FPSMetricsBack/node_modules/
             - /dbdata
         depends_on:
