@@ -45,7 +45,12 @@ export const AdminGameEditFormComponent: React.FC<IAdminGameEditFormProps> = ({
         e: React.ChangeEvent<HTMLInputElement>
     ) => {
         const replOfInputs = [...inputs];
-        replOfInputs[index][field] = +e.target.value;
+
+        replOfInputs[index] = {
+            ...replOfInputs[index],
+            [field]: +e.target.value,
+        };
+
         setInputs(replOfInputs);
     };
 
