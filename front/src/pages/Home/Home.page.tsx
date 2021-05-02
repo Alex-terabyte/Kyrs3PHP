@@ -16,12 +16,21 @@ export const HomePage = () => {
         if (!!gpu && !!cpu && !!ram && !!game) {
             const parseGame = JSON.parse(game);
             if (parseGame) {
-                const match = parseGame.find(
+                const filterGame = parseGame.filter(
                     (option: IAPIGame['options'][number]) =>
                         +gpu + +cpu + +ram >= option.koef
                 );
+                if (filterGame) {
+                    const fps = filterGame.reduce(
+                        (acc: number, item: IAPIGame['options'][number]) => {
+                            if (acc < item.fps) return item.fps;
+                            return acc;
+                        },
+                        0
+                    );
 
-                if (match) setFps(match.fps);
+                    if (fps) setFps(fps);
+                }
             }
         } else {
             setFps(0);
