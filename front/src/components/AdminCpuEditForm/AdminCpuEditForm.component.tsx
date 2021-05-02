@@ -116,7 +116,7 @@ export const AdminCpuEditFormComponent: React.FC<IAdminCpuEditFormFormProps> = (
                         />
                     </Form.Group>
                     <Form.Group controlId="name">
-                        <Form.Label>Частота</Form.Label>
+                        <Form.Label>Частота(Гц)</Form.Label>
                         <Form.Control
                             required
                             type="number"

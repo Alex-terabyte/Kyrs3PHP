@@ -117,7 +117,7 @@ export const AdminGpuEditFormComponent: React.FC<IAdminGpuEditFormFormProps> = (
                         />
                     </Form.Group>
                     <Form.Group controlId="name">
-                        <Form.Label>Частота</Form.Label>
+                        <Form.Label>Частота(Гц)</Form.Label>
                         <Form.Control
                             required
                             type="number"
@@ -131,7 +131,7 @@ export const AdminGpuEditFormComponent: React.FC<IAdminGpuEditFormFormProps> = (
                     </Form.Group>
 
                     <Form.Group controlId="name">
-                        <Form.Label>Объем видеопамяти</Form.Label>
+                        <Form.Label>Объем видеопамяти(Мб)</Form.Label>
                         <Form.Control
                             required
                             type="number"
@@ -144,7 +144,7 @@ export const AdminGpuEditFormComponent: React.FC<IAdminGpuEditFormFormProps> = (
                         />
                     </Form.Group>
                     <Form.Group controlId="name">
-                        <Form.Label>Ширина шины</Form.Label>
+                        <Form.Label>Ширина шины(Мб)</Form.Label>
                         <Form.Control
                             required
                             type="number"
